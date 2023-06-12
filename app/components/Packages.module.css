@@ -1,0 +1,172 @@
+.container {
+  padding-bottom: 9rem;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+
+.package {
+  box-shadow: 1px 3px 6px #e4e4e4;
+  border-radius: 25px;
+  width: 380px;
+}
+
+.top {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px 25px 0 0;
+  padding: 2rem 0;
+}
+
+.top__img {
+  width: 170px;
+  height: 170px;
+  position: relative;
+}
+
+.top__text {
+  font-size: var(--fs-200);
+  line-height: 1.3;
+  padding: 2% 70px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  color: var(--gray);
+  line-height: 1.3;
+}
+
+.main__price {
+  font-size: 3.15rem;
+  display: flex;
+  padding: 1.75rem 0;
+}
+
+.main__price_symbol {
+  font-size: 2.3rem;
+  padding: 0.35rem 0.6rem 0 0;
+}
+
+.main__header {
+  font-size: var(--fs-300);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main__list {
+  padding: 2.3em 0em;
+}
+
+.main__list_item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+.main__list_item_img {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.main__list_item_text {
+  padding-left: 1em;
+  font-size: var(--fs-200);
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    gap: 3%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .package {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    gap: 2%;
+  }
+  .package {
+    width: 330px;
+  }
+  .main__price {
+    font-size: 3.05rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .package {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    padding-bottom: 7.5rem;
+    flex-direction: column;
+  }
+  .package {
+    width: auto;
+    margin: 2.5rem 7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .package {
+    margin: 2.5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding-bottom: 6rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .package {
+    margin: 2.5rem 3rem;
+  }
+  .main__price {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .package {
+    margin: 2rem 2.5rem;
+  }
+  .main__price {
+    font-size: 2.55rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .package {
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .package {
+    margin: 2rem 1.5rem;
+  }
+  .main__price {
+    font-size: 2.5rem;
+  }
+  .top__img {
+    width: 160px;
+    height: 160px;
+  }
+}

@@ -1,0 +1,17 @@
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 100px;
+  z-index: 100;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  width: 200px;
+  height: 48px;
+  position: relative;
+}
