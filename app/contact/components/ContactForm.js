@@ -136,39 +136,18 @@ function ContactForm() {
 
           <input
             {...register("startAddressStreet", {
-              required: "Bitte tragen Sie hier die Straße am Auszugsort ein.",
+              required: "Bitte geben Sie Ihre Straße / Nr. am Auszugsort ein.",
             })}
             className={form.field}
             type="text"
             name="startAddressStreet"
-            placeholder="Auszugsort: Straße?"
+            placeholder="Auszugsort: Straße / Nummer?"
             aria-required="true"
           />
           <span className={form.error}>
             {errors?.startAddressStreet?.message}
           </span>
-          <input
-            {...register("startAddressNumber", {
-              required:
-                "Bitte tragen Sie hier die Hausnummer am Auszugsort ein.",
-              minLength: {
-                value: 1,
-                message: "Die eingegebene Hausnummer ist ungültig.",
-              },
-              maxLength: {
-                value: 4,
-                message: "Die eingegebene Hausnummer ist ungültig.",
-              },
-            })}
-            className={form.field}
-            type="text"
-            name="startAddressNumber"
-            placeholder="Auszugsort: Hausnummer?"
-            aria-required="true"
-          />
-          <span className={form.error}>
-            {errors?.startAddressNumber?.message}
-          </span>
+
           <input
             {...register("startAddressPostalCode", {
               required:
@@ -258,15 +237,15 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Auszugsort: Fahrstuhl?</option>
-            <option value="Nein">Es gibt keinen Fahrstuhl am Auszugsort</option>
+            <option value="Nein">Es gibt keinen Fahrstuhl</option>
             <option value="Ja / Größe: für bis zu 4 Personen">
-              Ja, es gibt einen Fahrstuhl für bis zu 4 Personen
+              Ja: für bis zu 4 Personen
             </option>
             <option value="Ja / Größe: für bis zu 8 Personen">
-              Ja, es gibt einen Fahrstuhl für bis zu 8 Personen
+              Ja: für bis zu 8 Personen
             </option>
             <option value="Ja / Größe: für mehr als 8 Personen">
-              Ja, es gibt einen Fahrstuhl für mehr als 8 Personen
+              Ja: für mehr als 8 Personen
             </option>
           </select>
           <span className={form.error}>
@@ -283,12 +262,8 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Auszugsort: Parkplatz?</option>
-            <option value="Ja">
-              Wir kümmern uns selbst um einen LKW-Parkplatz
-            </option>
-            <option value="Nein">
-              Schenck & Hansen soll sich um Parkmöglichkeiten kümmern
-            </option>
+            <option value="Ja">Ja</option>
+            <option value="Nein">Nein</option>
           </select>
           <span className={form.error}>
             {errors?.startParkingSelection?.message}
@@ -304,88 +279,41 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Auszugsort: Abtrageweg?</option>
-            <option value="10 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 10
-              Meter
-            </option>
-            <option value="20 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 20
-              Meter
-            </option>
-            <option value="30 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 30
-              Meter
-            </option>
-            <option value="40 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 40
-              Meter
-            </option>
-            <option value="50 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 50
-              Meter
-            </option>
-            <option value="60 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 60
-              Meter
-            </option>
-            <option value="70 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 70
-              Meter
-            </option>
-            <option value="80 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 80
-              Meter
-            </option>
-            <option value="90 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 90
-              Meter
-            </option>
-            <option value="100 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 100
-              Meter
-            </option>
+            <option value="10 Meter">10 Meter</option>
+            <option value="20 Meter">20 Meter</option>
+            <option value="30 Meter">30 Meter</option>
+            <option value="40 Meter">40 Meter</option>
+            <option value="50 Meter">50 Meter</option>
+            <option value="60 Meter">60 Meter</option>
+            <option value="70 Meter">70 Meter</option>
+            <option value="80 Meter">80 Meter</option>
+            <option value="90 Meter">90 Meter</option>
+            <option value="100 Meter">100 Meter</option>
           </select>
           <span className={form.error}>
             {errors?.startDistanceSelection?.message}
           </span>
+          <p className={form.additional_text}>
+            *Der Abtrageweg ist der Laufweg zwischen dem LKW und dem Abstellort
+            oder Ort des Umzugsguts
+          </p>
 
           <h2 className={form.small_header}>Angaben zum Zielort des Umzugs</h2>
 
           <input
             {...register("endAddressStreet", {
-              required: "Bitte tragen Sie hier die Straße am Zielort ein.",
+              required: "Bitte geben Sie Ihre Straße und Nr. am Zielort ein.",
             })}
             className={form.field}
             type="text"
             name="endAddressStreet"
-            placeholder="Einzugsort: Straße?"
+            placeholder="Einzugsort: Straße / Nummer?"
             aria-required="true"
           />
           <span className={form.error}>
             {errors?.endAddressStreet?.message}
           </span>
-          <input
-            {...register("endAddressNumber", {
-              required:
-                "Bitte tragen Sie hier die Hausnummer am Einzugsort ein.",
-              minLength: {
-                value: 1,
-                message: "Die eingegebene Hausnummer ist ungültig.",
-              },
-              maxLength: {
-                value: 4,
-                message: "Die eingegebene Hausnummer ist ungültig.",
-              },
-            })}
-            className={form.field}
-            type="text"
-            name="endAddressNumber"
-            placeholder="Einzugsort: Hausnummer?"
-            aria-required="true"
-          />
-          <span className={form.error}>
-            {errors?.endAddressNumber?.message}
-          </span>
+
           <input
             {...register("endAddressPostalCode", {
               required:
@@ -473,15 +401,15 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Einzugsort: Fahrstuhl?</option>
-            <option value="Nein">Es gibt keinen Fahrstuhl am Einzugsort</option>
+            <option value="Nein">Es gibt keinen Fahrstuhl</option>
             <option value="Ja / Größe: für bis zu 4 Personen">
-              Ja, es gibt einen Fahrstuhl für bis zu 4 Personen
+              Ja: für bis zu 4 Personen
             </option>
             <option value="Ja / Größe: für bis zu 8 Personen">
-              Ja, es gibt einen Fahrstuhl für bis zu 8 Personen
+              Ja: für bis zu 8 Personen
             </option>
             <option value="Ja / Größe: für mehr als 8 Personen">
-              Ja, es gibt einen Fahrstuhl für mehr als 8 Personen
+              Ja: für mehr als 8 Personen
             </option>
           </select>
           <span className={form.error}>
@@ -498,12 +426,8 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Einzugsort: Parkplatz?</option>
-            <option value="Ja">
-              Wir kümmern uns selbst um einen LKW-Parkplatz
-            </option>
-            <option value="Nein">
-              Schenck & Hansen soll sich um Parkmöglichkeiten kümmern
-            </option>
+            <option value="Ja">Ja</option>
+            <option value="Nein">Nein</option>
           </select>
           <span className={form.error}>
             {errors?.endParkingSelection?.message}
@@ -519,50 +443,24 @@ function ContactForm() {
             aria-required="true"
           >
             <option value="">Einzugsort: Abtrageweg?</option>
-            <option value="10 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 10
-              Meter
-            </option>
-            <option value="20 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 20
-              Meter
-            </option>
-            <option value="30 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 30
-              Meter
-            </option>
-            <option value="40 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 40
-              Meter
-            </option>
-            <option value="50 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 50
-              Meter
-            </option>
-            <option value="60 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 60
-              Meter
-            </option>
-            <option value="70 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 70
-              Meter
-            </option>
-            <option value="80 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 80
-              Meter
-            </option>
-            <option value="90 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 90
-              Meter
-            </option>
-            <option value="100 Meter">
-              Distanz zwischen LKW und Beginn der Treppenstufen / Fahrstuhl: 100
-              Meter
-            </option>
+            <option value="10 Meter">10 Meter</option>
+            <option value="20 Meter">20 Meter</option>
+            <option value="30 Meter">30 Meter</option>
+            <option value="40 Meter">40 Meter</option>
+            <option value="50 Meter">50 Meter</option>
+            <option value="60 Meter">60 Meter</option>
+            <option value="70 Meter">70 Meter</option>
+            <option value="80 Meter">80 Meter</option>
+            <option value="90 Meter">90 Meter</option>
+            <option value="100 Meter">100 Meter</option>
           </select>
           <span className={form.error}>
             {errors?.endDistanceSelection?.message}
           </span>
+          <p className={form.additional_text}>
+            *Der Abtrageweg ist der Laufweg zwischen dem LKW und dem Abstellort
+            oder Ort des Umzugsguts
+          </p>
           <h2 className={form.small_header}>
             Angaben zu den Wunschterminen für Ihren Umzug
           </h2>
@@ -579,14 +477,13 @@ function ContactForm() {
             className={form.field}
             type="text"
             name="dateOne"
-            placeholder="1. Wunschtermin an ( TT.MM.JJJJ )"
+            placeholder="Wunschtermin ( TT.MM.JJJJ )"
             aria-required="true"
           />
           <span className={form.error}>{errors?.dateOne?.message}</span>
 
           <input
             {...register("dateTwo", {
-              required: "Bitte geben Sie Ihren ersten Wunschtermin an.",
               pattern: {
                 value:
                   /^([1-9]|0[1-9]|[12][0-9]|3[01])[-\.]([1-9]|0[1-9]|1[012])[-\.](19|20)\d\d$/,
@@ -597,14 +494,12 @@ function ContactForm() {
             className={form.field}
             type="text"
             name="dateTwo"
-            placeholder="2. Wunschtermin an ( TT.MM.JJJJ )"
-            aria-required="true"
+            placeholder="1. Alternativtermin ( TT.MM.JJJJ )"
           />
           <span className={form.error}>{errors?.dateTwo?.message}</span>
 
           <input
             {...register("dateThree", {
-              required: "Bitte geben Sie Ihren ersten Wunschtermin an.",
               pattern: {
                 value:
                   /^([1-9]|0[1-9]|[12][0-9]|3[01])[-\.]([1-9]|0[1-9]|1[012])[-\.](19|20)\d\d$/,
@@ -615,8 +510,7 @@ function ContactForm() {
             className={form.field}
             type="text"
             name="dateThree"
-            placeholder="3. Wunschtermin an ( TT.MM.JJJJ )"
-            aria-required="true"
+            placeholder="2. Alternativtermin ( TT.MM.JJJJ )"
           />
           <span className={form.error}>{errors?.dateThree?.message}</span>
 

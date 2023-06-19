@@ -116,7 +116,7 @@ function Reviews() {
               ></Image>
             </div>
           </div>
-          <p className={style.box__text}>100 Bewertungen</p>
+          <p className={style.box__text}>101 Bewertungen</p>
         </div>
 
         <div className={style.box}>

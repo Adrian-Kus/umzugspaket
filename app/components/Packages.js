@@ -1,9 +1,6 @@
 import style from "@/app/components/Packages.module.css";
-import Button from "@/app/components/Button.js";
+import ButtonPackages from "@/app/components/ButtonPackages.js";
 import Image from "next/image";
-
-const link = "contact";
-const text = "Jetzt Paket buchen";
 
 function Packages() {
   return (
@@ -97,7 +94,7 @@ function Packages() {
                 </span>
               </li>
             </ul>
-            <Button link={link} text={text} />
+            <ButtonPackages />
           </div>
         </div>
         <div className={style.package}>
@@ -188,7 +185,7 @@ function Packages() {
                 </span>
               </li>
             </ul>
-            <Button link={link} text={text} />
+            <ButtonPackages />
           </div>
         </div>
         <div className={style.package}>
@@ -280,7 +277,7 @@ function Packages() {
                 </span>
               </li>
             </ul>
-            <Button link={link} text={text} />
+            <ButtonPackages />
           </div>
         </div>
       </div>

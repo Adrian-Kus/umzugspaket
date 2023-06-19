@@ -152,6 +152,10 @@
   color: var(--red);
 }
 
+.additional_text {
+  color: var(--white);
+}
+
 @media screen and (max-width: 1000px) {
   .contact_form {
     padding: 3rem 8% 6rem 8%;

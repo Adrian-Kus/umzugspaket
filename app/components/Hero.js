@@ -2,9 +2,6 @@ import style from "@/app/components/Hero.module.css";
 import Button from "@/app/components/Button.js";
 import Image from "next/image";
 
-const link = "#packages";
-const text = "Jetzt Pakete ansehen";
-
 function Hero() {
   return (
     <>
@@ -36,7 +33,7 @@ function Hero() {
             Entdecken Sie unsere preis&shy;werten & starken Umzugs&shy;lösungen
             für jede Haus&shy;halts&shy;größe.
           </p>
-          <Button link={link} text={text} />
+          <Button />
         </div>
       </div>
     </>
