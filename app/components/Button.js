@@ -6,7 +6,7 @@ function Button() {
     <>
       <a href="/#packages" scroll={false} className={style.btn}>
         <div className={style.btn__text}>
-          Jetzt Paket buchen
+          Jetzt Paket ansehen
           <span className={style.btn__text_circle}>
             <IoIosArrowForward className={style.btn__text_icon} />
           </span>
