@@ -535,7 +535,9 @@ function ContactForm() {
             <CaptchaField control={control} name={"captcha"} />
           </CaptchaRow>
           <button className={form.btn} type="submit">
-            <span className={form.btn__inner}>Jetzt Nachricht senden</span>
+            <span className={form.btn__inner} id="formSubmit">
+              Jetzt Nachricht senden
+            </span>
           </button>
           <div className={form.info}>
             {state === "SUCCESS" && (
