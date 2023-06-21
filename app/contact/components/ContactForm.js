@@ -539,7 +539,7 @@ function ContactForm() {
               Jetzt Nachricht senden
             </span>
           </button>
-          <div className={form.info}>
+          <div className={form.info} id="formSuccess">
             {state === "SUCCESS" && (
               <p>
                 Wir haben Ihre Nachricht erhalten und werden uns in Kürze bei
