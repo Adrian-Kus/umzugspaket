@@ -1,5 +1,7 @@
 "use client";
 import Head from "next/head";
+import Navbar from "@/app/components/Navbar.js";
+import Footer from "@/app/components/Footer.js";
 import Hero from "@/app/components/Hero.js";
 import Reviews from "@/app/components/Reviews.js";
 import Introduction from "@/app/components/Introduction.js";
@@ -31,6 +33,7 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/xnb3ykb.css" />
       </Head>
       <main>
+        <Navbar />
         <Hero />
         <Reviews />
         <Introduction />
@@ -46,6 +49,7 @@ export default function Home() {
               <Text />
               <CallToAction />
               <Reviews />
+              <Footer />
             </motion.div>
           </AnimatePresence>
         </LayoutGroup>

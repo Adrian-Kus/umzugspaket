@@ -1,5 +1,7 @@
 import Head from "next/head";
 import ContactForm from "@/app/contact/components/ContactForm.js";
+import Navbar from "@/app/components/Navbar.js";
+import Footer from "@/app/components/Footer.js";
 
 export default function Contact() {
   return (
@@ -22,7 +24,9 @@ export default function Contact() {
         <link rel="stylesheet" href="https://use.typekit.net/xnb3ykb.css" />
       </Head>
       <main>
+        <Navbar />
         <ContactForm />
+        <Footer />
       </main>
     </>
   );
