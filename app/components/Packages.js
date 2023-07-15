@@ -22,7 +22,7 @@ function Packages() {
           </div>
           <div className={style.main}>
             <div className={style.main__price}>
-              <span className={style.main__price_symbol}>&euro;</span>890,-
+              <span className={style.main__price_symbol}>&euro;</span>690,-
             </div>
             <p className={style.main__header}>
               Das leistungsstarke Umzugspaket S enthält:
@@ -64,22 +64,10 @@ function Packages() {
                   ></Image>
                 </div>
                 <span className={style.main__list_item_text}>
-                  1 ganzer Arbeitstag von 8:00 - 16:00 Uhr
+                  1 ganzer Arbeitstag von bis zu 8 Std. Einsatzzeit
                 </span>
               </li>
-              <li className={style.main__list_item}>
-                <div className={style.main__list_item_img}>
-                  <Image
-                    src="/checkmark.svg"
-                    alt="Symbol für im Umzugspaket enthalten"
-                    width="29"
-                    height="29"
-                  ></Image>
-                </div>
-                <span className={style.main__list_item_text}>
-                  inklusive An- und Abfahrt innerhalb Hamburgs
-                </span>
-              </li>
+
               <li className={style.main__list_item}>
                 <div className={style.main__list_item_img}>
                   <Image
@@ -113,7 +101,7 @@ function Packages() {
           </div>
           <div className={style.main}>
             <div className={style.main__price}>
-              <span className={style.main__price_symbol}>&euro;</span>1.290,-
+              <span className={style.main__price_symbol}>&euro;</span>1.050,-
             </div>
             <p className={style.main__header}>
               Das leistungsstarke Umzugspaket M enthält:
@@ -155,22 +143,10 @@ function Packages() {
                   ></Image>
                 </div>
                 <span className={style.main__list_item_text}>
-                  1 ganzer Arbeitstag von 8:00 - 16:00 Uhr
+                  1 ganzer Arbeitstag von bis zu 8 Std. Einsatzzeit
                 </span>
               </li>
-              <li className={style.main__list_item}>
-                <div className={style.main__list_item_img}>
-                  <Image
-                    src="/checkmark.svg"
-                    alt="Symbol für im Umzugspaket enthalten"
-                    width="29"
-                    height="29"
-                  ></Image>
-                </div>
-                <span className={style.main__list_item_text}>
-                  inklusive An- und Abfahrt innerhalb Hamburgs
-                </span>
-              </li>
+
               <li className={style.main__list_item}>
                 <div className={style.main__list_item_img}>
                   <Image
@@ -205,7 +181,7 @@ function Packages() {
           <div className={style.main}>
             <div className={style.main__price}>
               <span className={style.main__price_symbol}>&euro;</span>
-              1.990,-
+              1.790,-
             </div>
             <p className={style.main__header}>
               Das leistungsstarke Umzugspaket L enthält:
@@ -247,22 +223,10 @@ function Packages() {
                   ></Image>
                 </div>
                 <span className={style.main__list_item_text}>
-                  1 ganzer Arbeitstag von 8:00 - 16:00 Uhr
+                  1 ganzer Arbeitstag von bis zu 8 Std. Einsatzzeit
                 </span>
               </li>
-              <li className={style.main__list_item}>
-                <div className={style.main__list_item_img}>
-                  <Image
-                    src="/checkmark.svg"
-                    alt="Symbol für im Umzugspaket enthalten"
-                    width="29"
-                    height="29"
-                  ></Image>
-                </div>
-                <span className={style.main__list_item_text}>
-                  inklusive An- und Abfahrt innerhalb Hamburgs
-                </span>
-              </li>
+
               <li className={style.main__list_item}>
                 <div className={style.main__list_item_img}>
                   <Image

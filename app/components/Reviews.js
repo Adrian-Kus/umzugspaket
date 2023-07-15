@@ -59,7 +59,7 @@ function Reviews() {
               ></Image>
             </div>
           </div>
-          <p className={style.box__text}>245 Bewertungen</p>
+          <p className={style.box__text}>246 Bewertungen</p>
         </div>
 
         <div className={style.box}>
@@ -116,7 +116,7 @@ function Reviews() {
               ></Image>
             </div>
           </div>
-          <p className={style.box__text}>101 Bewertungen</p>
+          <p className={style.box__text}>106 Bewertungen</p>
         </div>
 
         <div className={style.box}>
@@ -173,7 +173,7 @@ function Reviews() {
               ></Image>
             </div>
           </div>
-          <p className={style.box__text}>29 Bewertungen</p>
+          <p className={style.box__text}>31 Bewertungen</p>
         </div>
       </div>
     </>

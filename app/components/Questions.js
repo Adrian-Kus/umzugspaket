@@ -85,19 +85,16 @@ function Questions() {
                   className={style.answer}
                 >
                   <p className={style.answer__first}>
-                    Jedes Umzugspaket umfasst einen Arbeitstag. Ein Arbeitstag
-                    umfasst bis zu 8 Stunden Arbeitszeit. Die Arbeitszeit wird
-                    ab Arbeitsbeginn beim Kunden bis zum Arbeitsende beim Kunden
-                    berechnet.
+                    Ein Arbeitstag umfasst bis zu 8 Stunden Arbeitszeit. Die
+                    Arbeitszeit wird ab Arbeitsbeginn in der Firma bis zum
+                    Arbeitsende in der Firma berechnet. Firmensitz ist der
+                    Bargkoppelweg 56, 22145 Hamburg.
                   </p>
                 </motion.div>
               </QuestionsToggle>
             </AnimatePresence>
             <AnimatePresence>
-              <QuestionsToggle
-                number="04."
-                title="Entstehen Zusatzkosten für die Anfahrt und Abfahrt?"
-              >
+              <QuestionsToggle number="04." title="Wann beginnt mein Umzug?">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -105,9 +102,9 @@ function Questions() {
                   className={style.answer}
                 >
                   <p className={style.answer__first}>
-                    Die Anfahrt zum Kunden und die Abfahrt vom Kunden sind
-                    innerhalb Hamburgs in den Umzugspaketpreisen bereits
-                    inklusive.
+                    Der geplante Arbeitsbeginn beim Kunden ist um 8:00 Uhr. Je
+                    nach Verkehrsverhältnissen kann der Umzug auch etwas früher
+                    oder später beginnen.
                   </p>
                 </motion.div>
               </QuestionsToggle>
@@ -205,11 +202,8 @@ function Questions() {
                   </p>
                   <p className={style.answer__first}>
                     Befindet sich die Beladestelle oder Entladestelle außerhalb
-                    Hamburgs, sind insgesamt bis zu 2 Stunden An- und
-                    Abfahrtzeit bereits im Umzugspaket inklusive. Längere An-
-                    und Abfahrtzeiten gelten in diesem Fall als Arbeitszeit. Bis
-                    zu 50 Kilometer sind in jedem Umzugspaket inkludiert. Je
-                    weiteren Kilometer berechnen wir 1,50 Euro.
+                    Hamburgs, sind bis zu 50 Kilometer in jedem Umzugspaket
+                    inkludiert. Je weiteren Kilometer berechnen wir 1,50 Euro.
                   </p>
                 </motion.div>
               </QuestionsToggle>
