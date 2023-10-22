@@ -44,7 +44,7 @@ const contactApi = async (req, res) => {
   try {
     const emailRes = await transporter.sendMail({
       from: email,
-      to: "umzug.hamburg.schenck.hansen@gmail.com",
+      to: "kustynowicz.a@gmail.com",
       subject: `Neue Nachricht von ${lastName} (Kontaktformular)`,
       html: `<h2>Anfrage für ein Umzugspaket von ${firstName} ${lastName}</h2><br>
             <h3>Nachname: </h3><p> ${lastName} </p><br>
